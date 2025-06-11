@@ -1,0 +1,344 @@
+.main-container-layout {
+    height: 70px;
+    background-color: rgba(145, 191, 189, 75%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+}
+
+/* правая часть  ================================================================= */
+
+.left-side-layout {
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
+}
+
+.logo-layout {
+    font-family: 'BebasNu';
+    font-size: 35px;
+    color: white;
+    margin-left: 50px;
+    margin-top: 15px;
+}
+
+.menu-layout {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 20px;
+    font-family: 'BebasNu';
+    color: white;
+    font-size: 25px;
+}
+
+.item {
+    cursor: pointer;
+    color: white;
+    transition: color 0.5s ease;
+}
+
+.item:hover {
+    color: #FA7100;
+}
+
+.item.active {
+    color: #FA7100;
+}
+
+/* Левая часть  ================================================================== */
+
+.right-side-layout {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.contact-layout {
+    display: flex;
+    flex-direction: row;
+}
+
+.phone-number-layout {
+    padding: 25px;
+    font-family: 'BebasNu';
+    font-size: 20px;
+    height: 1px;
+    width: 110px;
+    color: white;
+}
+
+.social-network-layout {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.button-and-more-layout {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.buts-layout {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 18px;
+}
+
+#right-but-layout {
+    width: 160px;
+    height: 35px;
+    font-family: 'BebasNu';
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #29CCB9;
+    color: white;
+    transition: 0.5s;
+}
+
+#right-but-layout:hover {
+    background-color: #03857a;
+}
+
+#left-but-layout {
+    width: 120px;
+    height: 35px;
+    font-family: 'BebasNu';
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #FA7100;
+    color: white;
+    transition: 0.5s;
+}
+
+#left-but-layout:hover {
+    background-color: #bd5601;
+}
+
+.translate-layout {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 22px;
+    margin-right: 50px;
+}
+
+.rus-or-eng-layout {
+    font-family: 'BebasNu';
+    color: white;
+    font-size: 22px;
+}
+
+
+
+/* АДПАТИВКА ======================================================================*/
+
+.burger-icon {
+  display: none;
+  width: 30px;
+  cursor: pointer;
+}
+
+@media (max-width: 1650px) {
+
+    .left-side-layout {
+        gap: 60px;
+    }
+
+    .right-side-layout {
+        gap: 10px;
+    }
+    .button-and-more-layout {
+        gap: 10px;
+    }
+    .translate-layout {
+        padding: 0px;
+        padding-top: 22px;
+        gap: 10px;
+    }
+    .buts-layout {
+        padding: 15px;
+        padding-top: 18px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .left-side-layout {
+        gap: 50px;
+    }
+
+    .logo-layout {
+        font-size: 30px;
+        padding-top: 2px;
+    }
+
+    .menu-layout {
+        font-size: 20px;
+        padding-top: 5px;
+    }
+
+    .phone-number-layout {
+        font-size: 18px;
+    }
+
+    .icons-layout {
+        width: 25px;
+    }
+
+    #right-but-layout {
+        width: 140px;
+        font-size: 19px;
+    }
+
+    #left-but-layout {
+        width: 100px;
+        font-size: 19px;
+    }
+    .buts-layout {
+        padding: 10px;
+        padding-top: 18px;
+    }
+
+    .rus-or-eng-layout {
+        font-size: 20px;
+    }
+
+    .phone-number-layout {
+        padding: 5px;
+        padding-top: 25px;
+    }
+}
+
+@media (max-width: 1225px) {
+    .phone-number-layout {
+        padding: 5px;
+        padding-top: 25px;
+    }
+
+    .left-side-layout {
+        gap: 35px;
+    }
+
+    .menu-layout {
+        gap: 20px;
+    }
+
+    #right-but-layout {
+        width: 120px;
+        font-size: 17px;
+    }
+
+    #left-but-layout {
+        width: 80px;
+        font-size: 17px;
+    }
+}
+
+/* Планшеты (768px - 1024px) */
+@media (max-width: 1085px) {
+    .burger-icon {
+        display: block;
+        width: 30px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+
+}
+
+/* Мобильный header */
+.mobile-header {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+.mobile-menu-item {
+    font-family: 'BebasNu';
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.5s;
+}
+
+.mobile-menu-item:hover {
+    color: #FA7100;
+}
+
+.mobile-menu-item.active {
+    color: #FA7100;
+}
+
+.mobile-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #6a9999;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    overflow-y: auto;
+    height: 500px;
+}
+
+.close-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.close-icon-layout {
+    width: 30px;
+}
+
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-top: 80px;
+}
+
+.mobile-menu-item {
+    font-size: 25px;
+    font-family: 'BebasNu';
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 1085px) {
+    .left-side-layout,
+    .right-side-layout {
+        display: none;
+    }
+
+    .mobile-header {
+        display: flex;
+    }
+
+    .logo-layout {
+        margin-top: 5px;
+    }
+    .burger-icon {
+        margin-top: 5px;
+    }
+    .translate-layout {
+        margin: 0px;
+    }
+    .phone-number-layout {
+        height: 10px;
+    }
+}
