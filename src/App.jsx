@@ -4,6 +4,7 @@ import './App.css'
 
 // Импорты страничек
 import LoginPage from './Pages/Login.jsx';
+import MainPage from './Pages/Prime.jsx';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Router>
         <Routes>
           <Route path='/admin/account/login/' element={<LoginPage />} />
+          <Route path='/' element={<MainPage />} />
         </Routes>
       </Router>
     </div>

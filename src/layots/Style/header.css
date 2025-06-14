@@ -9,6 +9,18 @@
 header {
     position: fixed;
     width: 100%;
+    z-index: 10;
+}
+
+.logout-button {
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
 }
 
 /* правая часть  ================================================================= */
@@ -320,6 +332,14 @@ header {
 }
 
 @media (max-width: 1085px) {
+
+    .mobile-header {
+        background-color: gray;
+    }
+    .main-container-layout {
+        background-color: gray;
+    }
+
     .left-side-layout,
     .right-side-layout {
         display: none;

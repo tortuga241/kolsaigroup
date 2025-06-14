@@ -1,6 +1,6 @@
 import React from "react";
 import '../font.css';
-import './Style/tourCard.css';
+import './Style/tourCardCharyn.css';
 
 //Импорт картинки
 import kolssaiIMG from '../assets/images/CardKolsai.jpeg';

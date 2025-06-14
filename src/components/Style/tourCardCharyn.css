@@ -3,14 +3,13 @@
     display: flex;
     flex-direction: column;
     background-color: white;
+    color: black;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    position: relative;
 }
 
 .card-top-part {
-    position: relative;
+    max-height: 200px;
 }
 
 .img-card-tour {
@@ -21,11 +20,12 @@
 }
 
 .curcle-card {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    top: -190px;
+    left: 290px;
+    z-index: 1 ;
     border-radius: 50%;
     background-color: #FA7100;
     display: flex;

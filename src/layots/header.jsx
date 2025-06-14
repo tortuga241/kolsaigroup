@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Cookies from "js-cookie";
+import { useNavigate } from "react-router-dom";
 
 // CSS
 import './Style/header.css';
@@ -15,6 +17,16 @@ function Layout () {
     const [activeLayout, setActiveLayout] = useState("MAIN");
     const [menuOpen, setMenuOpen] = useState(false);
 
+    //Состояние для выхода из аккаунта
+    const adminCookie= Cookies.get('Admin');
+    const isAdmin = !!adminCookie; 
+
+    const navigate = useNavigate();
+
+    const handleLogout = () => {
+        Cookies.remove('Admin');
+        navigate('/');
+    };
     const LayoutButClick = (item) => {
         setActiveLayout(item);
         setMenuOpen(false); // Закрываем меню при выборе
@@ -111,6 +123,10 @@ function Layout () {
                         </div>
                     </div>
                 </div>
+            )}
+
+            {isAdmin && (
+                <button onClick={handleLogout} className="logout-button">Выйти</button>
             )}
             </header>
         </>
